@@ -11,7 +11,7 @@ public class Collatz {
 				counter = 0;
 				num = i;
 
-				System.out.print(i + ", ");
+				System.out.print(i + " ");
 				while (flag != false) {
 					if (num % 2 == 0)
 						num /= 2;
@@ -22,7 +22,7 @@ public class Collatz {
 						flag = false;
 						break;
 					}
-					System.out.print(num + ", ");
+					System.out.print(num + " ");
 
 					counter++;
 				}
