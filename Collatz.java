@@ -7,7 +7,7 @@ public class Collatz {
 		int counter;
 		boolean flag = true;
 		if (str.equals("v")) {
-			for (int i = 1; i <= (var1 + 1); i++) {
+			for (int i = 1; i < (var1 + 1); i++) {
 				counter = 0;
 				num = i;
 
