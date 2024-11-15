@@ -6,7 +6,7 @@ public class CalcPi {
 		int count = 2;
 		double result =1;
 		double odd = 3;
-		while (var1 >= count+2) {
+		while ((var1+2) >= count) {
 			if(count%2==0)
 			result = result -(1 / odd);
 			else

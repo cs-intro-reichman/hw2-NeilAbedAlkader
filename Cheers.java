@@ -18,10 +18,10 @@ public class Cheers {
                     count2++;
                 }
                 if(flag == false)
-                System.out.println("Give me an " +  str.charAt(count) + ": "+str.charAt(count)+"!" );
+                System.out.println("Give me an" +  str.charAt(count) + ": "+str.charAt(count)+"!" );
 
                 else
-                    System.out.println("Give me a " +  str.charAt(count) + ": "+str.charAt(count)+"!" );
+                    System.out.println("Give me a" +  str.charAt(count) + ": "+str.charAt(count)+"!" );
 
                 flag = true;
                 count++;
