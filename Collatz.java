@@ -26,7 +26,7 @@ public class Collatz {
 
 					counter++;
 				}
-				System.out.print(1 + "(" + (counter + 2) + ")");
+				System.out.print(1 + " (" + (counter + 2) + ")");
 				System.out.println();
 
 				flag = true;
