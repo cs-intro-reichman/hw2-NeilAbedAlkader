@@ -8,7 +8,7 @@ public class Cheers {
 
         for (int i = 0; i < str.length(); i++) {
             char currentChar = str.charAt(i);
-            String article = specialLetters.indexOf(currentChar) != -1 ? "an" : "a";
+            String article = specialLetters.indexOf(currentChar) != -1 ? "an" : "a ";
             System.out.println("Give me " + article + " " + currentChar + ": " + currentChar + "!");
         }
 
