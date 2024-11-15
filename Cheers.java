@@ -1,37 +1,29 @@
 import javax.print.DocFlavor;
 
-// Prints a crowd cheering output.
 public class Cheers {
-        public static void main(String[] args) {
-            String str = args[0];
-            int var1 = Integer.parseInt(args[1]);
-            str = str.toUpperCase();
-            int count = 0;
-            int count2 = 0;
-            boolean flag = true;
-            String a = "AEFHILMNORSX";
-            while(str.length()!=count){
-                while(a.length()!=count2){
-                    if(str.charAt(count) == a.charAt(count2)) {
-                        flag = false;
-                        break;
-                    }
-                    count2++;
-                }
-                if(flag == false)
-                System.out.println("Give me an " +  str.charAt(count) + ": "+str.charAt(count)+"!" );
+    public static void main(String[] args) {
+        // Parse inputs
+        String str = args[0].toUpperCase(); // Convert input word to uppercase
+        int var1 = Integer.parseInt(args[1]); // Number of times to cheer
 
-                else
-                    System.out.println("Give me a " +  str.charAt(count) + ": "+str.charAt(count)+"!" );
+        // Characters that require "an"
+        String specialLetters = "AEFHILMNORSX";
 
-                flag = true;
-                count++;
-            }
-            System.out.println("What does that spell?");
+        // Loop through each character in the string
+        for (int i = 0; i < str.length(); i++) {
+            char currentChar = str.charAt(i);
 
-            for(int i =0; i < var1; i++)
-            System.out.println(str + "!!!");
+            // Determine if we should use "a" or "an"
+            String article = specialLetters.indexOf(currentChar) != -1 ? "an" : "a";
 
-
+            // Print the cheer line
+            System.out.println("Give me " + article + " " + currentChar + ": " + currentChar + "!");
         }
+
+        // Print the final cheer
+        System.out.println("What does that spell?");
+        for (int i = 0; i < var1; i++) {
+            System.out.println(str + "!!!");
+        }
+    }
 }
