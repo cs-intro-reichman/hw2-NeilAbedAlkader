@@ -4,6 +4,7 @@ import javax.print.DocFlavor;
 public class Cheers {
         public static void main(String[] args) {
             String str = args[0];
+            int var1 = Integer.parseInt(args[1);
             str = str.toUpperCase();
             int count = 0;
             int count2 = 0;
@@ -28,7 +29,7 @@ public class Cheers {
             }
             System.out.println("What does that spell?");
 
-            for(int i =0; i < 3; i++)
+            for(int i =0; i < var1; i++)
             System.out.println(str + "!!!");
 
 
