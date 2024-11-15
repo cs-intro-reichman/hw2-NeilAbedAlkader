@@ -7,7 +7,7 @@ public class CalcPi {
 
 		while (count < var1) {
 			if (count % 2 == 0) {
-				result += 1 / odd; /
+				result += 1 / odd;
 			} else {
 				result -= 1 / odd;
 			}
