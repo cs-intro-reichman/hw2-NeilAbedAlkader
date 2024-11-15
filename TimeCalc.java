@@ -6,7 +6,10 @@ public class TimeCalc {
         int timeInMinutes = hours * 60 + minutes + minutesToAdd;
         int newMinutes = timeInMinutes%60;
         int newHours = ((timeInMinutes-newMinutes)/60)%24;
-        System.out.println(newHours + ":" + newMinutes);
+
+        System.out.println(String.format("%02d:%02d", newHours, newMinutes));
+        // used string format instead of few ifs
+
 
 
 
