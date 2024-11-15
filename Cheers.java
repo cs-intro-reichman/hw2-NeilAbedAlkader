@@ -4,6 +4,7 @@ import javax.print.DocFlavor;
 public class Cheers {
         public static void main(String[] args) {
             String str = args[0];
+            str = str.toUpperCase();
             int count = 0;
             int count2 = 0;
             boolean flag = true;
